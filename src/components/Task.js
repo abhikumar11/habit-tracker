@@ -27,9 +27,9 @@ const Task = (props) => {
                         <div className="content">
                             <div className='right floated'>
                                 <select className="ui dropdown" defaultValue={task.status} onChange={(e) => { updateProcess(e.target.value, task.id) }}>
-                                    <option value='P'>Pending</option>
-                                    <option value='C'>Completed</option>
-                                    <option value='I'>Incomplete</option>
+                                    <option value='None'>None</option>
+                                    <option value='Done'>Done</option>
+                                    <option value='Not Done'>Not Done</option>
                                 </select>
                                 <i className='delete icon red large' onClick={() => { removeTask(task.id) }}></i>
                             </div>

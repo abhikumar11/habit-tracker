@@ -1,6 +1,6 @@
 import { ADD_TASK } from "../actions/types";
 
-export default (state = [{ name: 'dasd', time: '02:32' }], action) => {
+export default (state = [{ name: 'Cardio', time: '06:00' }], action) => {
     console.log(state)
     console.log(action, ' red')
     switch (action.type) {

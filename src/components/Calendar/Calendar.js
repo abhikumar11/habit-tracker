@@ -77,7 +77,7 @@ const Calendar = (props, { showDetailsHandle }) => {
         let day = startDate;
         let formattedDate = "";
         const status = props.props.status;
-        const clr = status === "I" ? "red" : status === "C" ? "green" : "";
+        const clr = status === "Not Done" ? "red" : status === "Done" ? "green" : "";
         while (day <= endDate) {
             for (let i = 0; i < 7; i++) {
                 formattedDate = format(day, dateFormat);

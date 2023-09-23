@@ -8,8 +8,7 @@ import WeekTask from './components/WeekTask';
 
 const App = () => {
     return (
-        <div className='ui container' >
-            
+        <div className="App">
                 <Navbar />
                 <Routes>
                     <Route path='/' exact element={<Home/>} />

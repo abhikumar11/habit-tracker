@@ -1,9 +1,7 @@
 import { combineReducers } from "redux";
 import { ADD_TASK, DELETE_TASK, UPDATE_TASK } from "../actions/types";
 
-// import addTaskReducer from "./addTaskReducer";
-
-const Tasks = [{ name: 'GYM', time: '06:00', id: 1, status: 'C' }];
+const Tasks = [{ name: 'Cardio', time: '06:00', id: 1, status: 'None' }];
 
 const TaskReducer = (state = Tasks, action) => {
     switch (action.type) {
