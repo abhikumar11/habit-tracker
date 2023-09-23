@@ -1,11 +1,27 @@
-import './App.css';
+import React from 'react';
+import {Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import AddTask from './components/AddTask';
+import WeekTask from './components/WeekTask';
 
-function App() {
-  return (
-    <div className="App">
-     <p>Habit Tracker </p>
-    </div>
-  );
-}
+
+const App = () => {
+    return (
+        <div className='ui container' >
+            
+                <Navbar />
+                <Routes>
+                    <Route path='/' exact element={<Home/>} />
+                    </Routes>
+                    <Routes>
+                    <Route path='/AddTask' exact element={<AddTask/>} />
+                    </Routes>
+                    <Routes>
+                    <Route path='/WeekTask' exact element={<WeekTask/>} />
+                    </Routes>
+        </div>
+    )
+};
 
 export default App;
